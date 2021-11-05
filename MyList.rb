@@ -2,8 +2,8 @@ require_relative 'enumerable'
 
 class MyList
   include Enumerable
-  def initialize(int1, int2, int3, int4)
-    @list = [int1, int2, int3, int4]
+  def initialize(*list)
+    @list = list
   end
 end
 
